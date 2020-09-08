@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List atividade web</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do List</title>
+    </head>
+    <body>
+        <!-- MAIN TITLE -->
+        <div class="main-title">
+            <h1>TAREFAS A FAZER (TO DO APP)</h1>
+        </div>
+        <div class="instruction">
+            <p class="instruction__1">Adicione texto dentro da caixa de testo para inserir novas atividades.</p>
+            <p class="instruction__2">Clique no item.</p>
+            <p class="instruction__3">Clique no "X" da atividade para remover o item.</p>
+        </div>
+        <div class="task">
+            <form class="task__form">
+                <label for="text">Nome</label>
+                <br />
+                <input
+                  type="text"
+                  id="text"
+                  name="text"
+                  maxlength="70%"
+                  placeholder=" Nova tarefa...">
+                <div class="button__add">
+                   <button type="submit">Adiconar</button>
+                </div> 
+            </form>
+        </div>
+        <div class="list">
+            <ul class="list__all">
+                <li class="list__items">
+                    <p class="item""></p>
+                    <button class="button__delete" type="submit">X</button>
+                </li>
+            </ul>
+        </div>
+    </body>
 </html>
