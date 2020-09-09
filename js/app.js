@@ -18,7 +18,7 @@ function showToDos() {
 
     for (todo of todos){
         let todoElement = document.createElement('li');
-        todoElement.setAttribute('onclick', `changeState(this, ${id})`)
+        todoElement.setAttribute('ondblclick', `changeState(this, ${id})`)
 
         const classValue = todo.selected ? 'list__items--selected' : 'list__items'; 
         todoElement.setAttribute('class', `${classValue}`);
@@ -56,7 +56,7 @@ function createToDo() {
 }
 
 function removeToDo(toDoID) {
-    if(!toDoID) return;
+    if(toDoID< 0 || toDoID>todos.length) return;
     console.log(toDoID);
     todos.splice(toDoID, 1);
     saveToStorage(); 
@@ -65,11 +65,11 @@ function removeToDo(toDoID) {
 
 function changeState(liElement, id){
     if(!liElement || typeof todos[id] == 'undefined') return;
-    liElement.setAttribute('class', 'list__items--selected');
     todos[id].selected = todos[id].selected ? false : true;
     console.warn(liElement);
     saveToStorage();
     console.log(todos);
+    showToDos();
 }
 
 function saveToStorage() {

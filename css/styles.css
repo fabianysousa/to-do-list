@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(1, 119, 119);
+}
+div.main_title{
+    color: white;
+    text-align: center;
+}
+div.instruction{
+    text-align: center;
+}
+p.instruction__1{
+    color: yellow;
+}
+p.instruction__2{
+    color: rgb(118, 189, 118);
+}
+p.instruction__3{
+    color: black;
+}
+div.task{
+    align-items:center;
+}
+input#text{
+    width: 50%;
+    display: flex;
+    margin-right: 16px;
+    
+}
+.list__items{
+    border: solid 1.5px black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+
+.list__items--selected{
+    border: solid 1.5px black;
+    border-radius: 5px;
+    background-color: rgb(4, 214, 4);
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+.task__form{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+.task__form > input{
+    padding: 5px;
+    border-radius: 5px;
+}
+form > .button__add > button{
+    padding: 5px;
+    border-radius: 5px;
+}
+.item{
+    margin-left: 8px;
+    margin-right: 8px;
+    color: whitesmoke;
+    
+}
+.button__delete{
+    background-color: red;
+    border-radius: 5px;
+    display: flex;
+    align-self: center;
+    padding: 4px 16px;
+}
