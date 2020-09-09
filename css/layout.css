@@ -28,3 +28,11 @@ div ul li p.item{
     border-color: black;
     background-color: cadetblue;
 }
+.list__items--selected{
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(34, 245, 6);
+}
+.task__form{
+    display: flex;
+}
